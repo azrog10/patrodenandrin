@@ -1,0 +1,56 @@
+SITE DU PATRO DE NANDRIN — MISE EN LIGNE ET MISES À JOUR
+=========================================================
+
+Le site est hébergé gratuitement sur GitHub Pages. Le seul coût est le nom de domaine
+patrodenandrin.be (environ 10 à 15 € par an).
+
+CONTENU DU DOSSIER
+  index.html      la page du site (tout le texte est dedans)
+  img/            photos (staff-prenom.webp = photo d'un animateur), logo, favicon
+  documents/      les PDF téléchargeables
+  informations/, camp/, photos/, contact-staff/, _downloads/ ...
+                  redirections : les anciennes adresses de l'ancien site Webador
+                  renvoient vers la bonne partie du nouveau site. Ne pas supprimer.
+  404.html        page affichée si quelqu'un tape une adresse qui n'existe pas
+  .nojekyll       fichier technique pour GitHub, ne pas supprimer
+
+COMPTES (au nom du Patro, PAS à titre personnel)
+  - Adresse Gmail du Patro, connue d'au moins deux membres du comité.
+  - Compte GitHub créé avec cette adresse.
+  - Compte chez le gestionnaire du nom de domaine, créé avec cette adresse.
+  Ajouter les autres animateurs qui s'occupent du site comme collaborateurs :
+  GitHub > dépôt > Settings > Collaborators > Add people.
+
+MODIFIER LE SITE (aucun logiciel à installer)
+  Changer un texte, une date, un prix, un nom :
+    github.com > dépôt patrodenandrin > index.html > icône crayon (Edit)
+    > Ctrl+F pour trouver la phrase > modifier > bouton vert "Commit changes".
+    Le site en ligne est mis à jour en 1 à 2 minutes.
+  Remplacer un PDF :
+    dossier documents > Add file > Upload files > déposer le nouveau fichier
+    AVEC EXACTEMENT LE MÊME NOM > Commit changes.
+  Remplacer la photo d'un animateur :
+    convertir la photo en WebP (par exemple sur squoosh.app), la renommer
+    staff-prenom.webp, puis dossier img > Add file > Upload files > Commit changes.
+  Ajouter / retirer un animateur, changer la présidence, grosse modification :
+    envoyer index.html à Claude en décrivant le changement, puis remplacer
+    index.html sur GitHub par le fichier renvoyé (Add file > Upload files).
+  Annuler une erreur :
+    dépôt > History (horloge) > ouvrir la modification > "Revert" ou recopier
+    l'ancienne version. Toutes les versions sont conservées.
+
+FORMULAIRE DE CONTACT
+  Il passe par FormSubmit (gratuit, sans compte). Au PREMIER message envoyé,
+  FormSubmit envoie un e-mail d'activation à l'adresse de la présidente :
+  il faut cliquer une fois sur le lien. Si la présidence change, remplacer
+  l'adresse e-mail dans index.html (rechercher "formsubmit.co").
+
+NOM DE DOMAINE — RÉGLAGES DNS À AVOIR CHEZ LE GESTIONNAIRE DU DOMAINE
+  Type A      @ (patrodenandrin.be)   185.199.108.153
+  Type A      @                        185.199.109.153
+  Type A      @                        185.199.110.153
+  Type A      @                        185.199.111.153
+  Type CNAME  www                      NOMDUCOMPTE.github.io
+  Puis GitHub > dépôt > Settings > Pages > Custom domain : www.patrodenandrin.be
+  > Save > cocher "Enforce HTTPS" quand l'option apparaît.
+  Penser à renouveler le domaine chaque année (activer le renouvellement automatique).
