@@ -39,11 +39,29 @@ MODIFIER LE SITE (aucun logiciel à installer)
     dépôt > History (horloge) > ouvrir la modification > "Revert" ou recopier
     l'ancienne version. Toutes les versions sont conservées.
 
+METTRE À JOUR LE CALENDRIER
+  Dans index.html, rechercher "data-date". Chaque samedi est une ligne du type :
+    <li class="ev is-patro" data-date="2026-11-14"><span class="d"><small>sam.</small>14/11</span><span class="t"><b>Patro</b></span></li>
+  - data-date : la date au format AAAA-MM-JJ (sert à calculer le "Prochain patro")
+  - class "ev is-patro" = patro ; "ev is-patro is-special" = patro avec activité ;
+    "ev is-off" = pas de patro
+  - une précision s'ajoute avec <em>…</em> après le </b>, et data-note="…" pour
+    qu'elle apparaisse dans l'encadré "Prochain patro".
+  Pour un nouveau trimestre, le plus simple : envoyer la photo du calendrier à Claude.
+
 FORMULAIRE DE CONTACT
-  Il passe par FormSubmit (gratuit, sans compte). Au PREMIER message envoyé,
-  FormSubmit envoie un e-mail d'activation à l'adresse de la présidente :
-  il faut cliquer une fois sur le lien. Si la présidence change, remplacer
-  l'adresse e-mail dans index.html (rechercher "formsubmit.co").
+  Il n'envoie rien à un serveur : il prépare le message, que le visiteur envoie
+  lui-même par WhatsApp, Gmail, Outlook ou sa messagerie. Rien à configurer.
+  Les messages arrivent chez la présidente (numéro et e-mail dans index.html).
+  Si la présidence change, l'adresse e-mail et le numéro apparaissent à plusieurs
+  endroits (index.html ET confidentialite/index.html) : envoyer les fichiers à
+  Claude pour tout remplacer en une fois.
+
+POLITIQUE DE CONFIDENTIALITÉ (confidentialite/index.html)
+  Elle engage le Patro sur deux points à respecter :
+  - supprimer les messages reçus au plus tard après un an ;
+  - détruire les fiches santé à la fin de l'année patro (camp compris).
+  Mettre à jour la date "Dernière mise à jour" si on la modifie.
 
 NOM DE DOMAINE — RÉGLAGES DNS À AVOIR CHEZ LE GESTIONNAIRE DU DOMAINE
   Type A      @ (patrodenandrin.be)   185.199.108.153
